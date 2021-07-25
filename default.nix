@@ -43,6 +43,7 @@ in stdenv.mkDerivation rec {
     xorg.libXtst
     xorg.xcbutilimage
     xorg.xcbutilrenderutil
+    xorg.libxshmfence
 
     cairo
     pango
