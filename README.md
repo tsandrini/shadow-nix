@@ -57,7 +57,7 @@ In your `home.nix` :
 ```nix
 {
   imports = [
-    (fetchGit { url = "https://github.com/NicolasGuilloux/shadow-nix"; ref = "v1.0.3"; } + "/import/home-manager.nix")
+    (fetchGit { url = "https://github.com/cornerman/shadow-nix"; ref = "refs/tags/v2.0.0"; } + "/import/home-manager.nix")
   ];
 
   programs.shadow-client = {
