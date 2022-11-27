@@ -1,7 +1,5 @@
 # Shadow on NixOS
 
-> :warning: Since I canceled my subscription, I am no longer able to maintain this package. If somebody wants to continue the maintenance, feel free to fork or [contact me](mailto:nicolas.guilloux@protonmail.com)
-
 ![Package build](https://github.com/NicolasGuilloux/shadow-nix/workflows/Package%20build/badge.svg)
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/NicolasGuilloux/shadow-nix/issues)
 [![License](https://img.shields.io/badge/license-Unlicense-blue.png)](LICENSE)
@@ -41,7 +39,7 @@ In your `configuration.nix` :
 ```nix
 {
   imports = [
-    (fetchGit { url = "https://github.com/NicolasGuilloux/shadow-nix"; ref = "v1.0.3"; } + "/import/system.nix")
+    (fetchGit { url = "https://github.com/cornerman/shadow-nix"; ref = "v2.0.0"; } + "/import/system.nix")
   ];
 
   programs.shadow-client = {
