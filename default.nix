@@ -21,7 +21,7 @@ in stdenv.mkDerivation rec {
   pname = "shadow-${shadowChannel}";
   version = info.version;
   src = fetchurl (utilities.shadowApi.getDownloadInfo info);
-  binaryName = (if shadowChannel == "prod" then "shadow" else "shadow-${shadowChannel}");
+  binaryName = (if shadowChannel == "prod" then "shadow-launcher" else "shadow-launcher-${shadowChannel}");
   channel = shadowChannel;
 
   # Add all hooks
