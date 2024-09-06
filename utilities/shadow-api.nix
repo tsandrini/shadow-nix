@@ -13,7 +13,7 @@
 rec {
   yamlInfo-prod = builtins.fetchurl {
     url = "https://storage.googleapis.com/shadow-update/launcher/prod/linux/ubuntu_18.04/latest-linux.yml";
-    sha256 = "sha256-eVr+quVnIQlp/lcOYmKAYytHbcmjBDzCh6XNeBpPF3g=";
+    sha256 = "sha256-qd0RoHQbLzD9vQt2447OZakMlwDEMrHKxHn7LOJYcE8=";
   };
 
   yamlInfo-preprod = builtins.fetchurl {
